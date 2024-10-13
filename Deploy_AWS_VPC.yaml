@@ -21,7 +21,7 @@ Parameters:
   AvailabilityZone1:
     Type: String
     Description: Availability Zone for subnet 1
-    Default: us-east-1a
+    Default: us-west-1a
 
 Resources:
   VPC:
@@ -109,22 +109,22 @@ Outputs:
     Description: VPC ID
     Value: !Ref VPC
     Export:
-      Name: NOC-VPC-01
+      Name: MyVpcId
 
   PublicSubnet1Id:
     Description: Public Subnet 1 ID
     Value: !Ref PublicSubnet1
     Export:
-      Name: NOC-Public-Subnet-01
+      Name: PublicSubnet1Id
 
   PrivateSubnet1Id:
     Description: Private Subnet 1 ID
     Value: !Ref PrivateSubnet1
     Export:
-      Name: NOC-Private-Subnet-01
+      Name: PrivateSubnet1Id
 
   InternetGatewayId:
     Description: Internet Gateway ID
     Value: !Ref InternetGateway
     Export:
-      Name: NOC-IG-001
+      Name: InternetGatewayId
